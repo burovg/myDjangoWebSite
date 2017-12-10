@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                Name:
+            </td>
+            <td>
+                {{model.Name}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Faculty
+            </td>
+            <td>
+                {{model.Faculty}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Grades:
+            </td>
+            <td/>
+        </tr>
+        {% for i in model.grades %}
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    {{i}}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    <p>Average is {{model.average}}</p>
+</body>
+</html>
